@@ -5,100 +5,100 @@
 ![MikroTik](https://img.shields.io/badge/MikroTik-RouterOS-blue)
 ![License](https://img.shields.io/badge/License-Proprietary-red)
 
-**HotspotMi** is a modern, web-based MikroTik Hotspot Management application built with Next.js and Tailwind CSS. It is designed to simplify the daily operations of managing a Wi-Fi hotspot network by providing a highly intuitive and responsive interface.
+**HotspotMi** adalah aplikasi manajemen MikroTik Hotspot berbasis web modern yang dibangun menggunakan **Next.js** dan **Tailwind CSS**. Aplikasi ini dirancang untuk menyederhanakan operasional harian dalam mengelola jaringan Wi-Fi hotspot dengan menyediakan antarmuka yang sangat intuitif dan responsif.
 
-Whether you are managing a small cafe Wi-Fi or a large-scale public hotspot network, HotspotMi streamlines user management, voucher generation, financial reporting, and router interactions—all from a single, centralized dashboard.
-
----
-
-## ✨ Key Features
-
-- 🎟️ **Advanced Voucher Management**
-  - Generate bulk or individual hotspot vouchers instantly.
-  - Customize voucher layouts and include scannable QR codes for quick login.
-  - Auto-expiration logic synced with MikroTik user profiles.
-
-- 📊 **Detailed Reporting & Analytics**
-  - Drill-down monthly and daily financial reports.
-  - Accurate revenue tracking based on real-time voucher activation.
-  - Export professional, non-editable PDF reports formatted for management reviews.
-
-- 🎛️ **Direct MikroTik Integration**
-  - Seamlessly connects to your MikroTik RouterOS via API.
-  - View real-time active users, sessions, and bandwidth usage.
-  - Built-in secure browser-based RouterOS terminal for direct commands without needing Winbox.
-
-- 🎨 **Modern & Responsive UI**
-  - Clean, user-friendly dashboard built with Tailwind CSS.
-  - Fully responsive design, allowing management from desktops, tablets, or smartphones.
+Baik Anda mengelola Wi-Fi kafe kecil maupun jaringan hotspot publik berskala besar, HotspotMi memudahkan manajemen pengguna, pembuatan voucher, pelaporan keuangan, dan interaksi router—semuanya dari satu *dashboard* terpusat.
 
 ---
 
-## 🛠️ Technology Stack
+## ✨ Fitur Utama
 
-- **Frontend Framework**: [Next.js](https://nextjs.org/) (React)
+- 🎟️ **Manajemen Voucher Tingkat Lanjut**
+  - Buat voucher hotspot secara massal atau individu dalam hitungan detik.
+  - Sesuaikan tampilan voucher, lengkap dengan QR code yang bisa di-*scan* untuk login cepat.
+  - Sistem kedaluwarsa otomatis yang terhubung langsung dengan profil pengguna di MikroTik.
+
+- 📊 **Laporan & Analitik Rinci**
+  - Laporan keuangan harian dan bulanan yang mendetail.
+  - Pelacakan pendapatan yang akurat berdasarkan aktivasi voucher secara *real-time*.
+  - Ekspor laporan dalam format PDF profesional yang tidak dapat diedit untuk keperluan manajemen.
+
+- 🎛️ **Integrasi Langsung dengan MikroTik**
+  - Terhubung mulus ke RouterOS MikroTik Anda melalui API.
+  - Pantau pengguna aktif, sesi, dan penggunaan *bandwidth* secara *real-time*.
+  - Terminal RouterOS berbasis browser yang aman bawaan, untuk menjalankan perintah langsung tanpa perlu Winbox.
+
+- 🎨 **Antarmuka Modern & Responsif**
+  - Dashboard yang bersih dan mudah digunakan, dibangun dengan Tailwind CSS.
+  - Desain sepenuhnya responsif, memungkinkan manajemen dari desktop, tablet, maupun *smartphone*.
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+- **Framework Frontend**: [Next.js](https://nextjs.org/) (React)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **MikroTik Communication**: `node-routeros`
-- **Data Visualization**: `recharts`
-- **PDF Generation**: `jspdf` & `jspdf-autotable`
-- **QR Codes**: `qrcode.react`
+- **Komunikasi MikroTik**: `node-routeros`
+- **Visualisasi Data**: `recharts`
+- **Pembuatan PDF**: `jspdf` & `jspdf-autotable`
+- **QR Code**: `qrcode.react`
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Panduan Memulai
 
-Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer lokal Anda untuk tujuan pengembangan dan pengujian.
 
-### Prerequisites
+### Prasyarat
 
-- **Node.js**: Version 18.x or higher.
-- **MikroTik Router**: A router accessible from the hosting environment.
-- **RouterOS API**: Ensure the API service is enabled on your MikroTik router (`IP` > `Services` > enable `api`).
+- **Node.js**: Versi 18.x atau lebih baru.
+- **Router MikroTik**: Router yang dapat diakses dari jaringan atau lingkungan *hosting* Anda.
+- **API RouterOS**: Pastikan layanan API aktif di router MikroTik Anda (`IP` > `Services` > aktifkan `api`).
 
-### Installation
+### Instalasi
 
-1. **Clone the repository**
+1. **Clone repository ini**
    ```bash
    git clone https://github.com/alfann15/HotspotMi.git
    cd HotspotMi
    ```
 
-2. **Install dependencies**
+2. **Instal dependensi**
    ```bash
    npm install
    ```
 
-3. **Environment Setup**
-   Copy the example environment file and fill in your details:
+3. **Pengaturan Environment**
+   Salin file environment contoh dan isi dengan data Anda:
    ```bash
    cp .env.example .env.local
    ```
-   *Make sure to configure your MikroTik IP, username, password, and JWT secret correctly inside `.env.local`.*
+   *Pastikan untuk mengisi IP MikroTik, username, password, dan JWT secret dengan benar di dalam `.env.local`.*
 
-4. **Run the development server**
+4. **Jalankan server pengembangan**
    ```bash
    npm run dev
    ```
 
-5. **Access the application**
-   Open [http://localhost:3000](http://localhost:3000) in your web browser.
+5. **Akses aplikasi**
+   Buka [http://localhost:3000](http://localhost:3000) di browser web Anda.
 
 ---
 
-## 🌍 Deployment
+## 🌍 Deployment (Penyebaran)
 
-HotspotMi is optimized for serverless deployment. The easiest way to deploy is using [Vercel](https://vercel.com/):
+HotspotMi sangat optimal untuk di-*deploy* menggunakan layanan serverless. Cara termudah adalah menggunakan [Vercel](https://vercel.com/):
 
-1. Push your code to a Git repository.
-2. Import the project into Vercel.
-3. Configure the environment variables (from your `.env.local`) in the Vercel dashboard.
-4. Deploy!
+1. *Push* kode Anda ke repository Git (GitHub).
+2. *Import* proyek ini ke dalam Vercel.
+3. Konfigurasikan variabel environment (seperti yang ada di `.env.local`) di dashboard Vercel.
+4. Klik **Deploy**!
 
-*(Note: Ensure your MikroTik router's API port is accessible from the deployment environment's network.)*
+*(Catatan: Pastikan port API router MikroTik Anda dapat diakses dari jaringan tempat aplikasi ini di-deploy).*
 
 ---
 
-## 📄 License
+## 📄 Lisensi
 
-**Private / Proprietary**  
-All rights reserved. Unauthorized copying, modification, or distribution of this software is strictly prohibited.
+**Privat / Proprietary**  
+Hak cipta dilindungi. Dilarang keras menyalin, memodifikasi, atau mendistribusikan perangkat lunak ini tanpa izin.
