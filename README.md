@@ -96,9 +96,4 @@ HotspotMi sangat optimal untuk di-*deploy* menggunakan layanan serverless. Cara 
 
 *(Catatan: Pastikan port API router MikroTik Anda dapat diakses dari jaringan tempat aplikasi ini di-deploy).*
 
----
 
-## 📄 Lisensi
-
-**Privat / Proprietary**  
-Hak cipta dilindungi. Dilarang keras menyalin, memodifikasi, atau mendistribusikan perangkat lunak ini tanpa izin.
